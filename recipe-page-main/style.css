@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Outfit-VariableFont';
+    src: url('/Recipe/Outfit-VariableFont_wght.ttf')
+    format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YoungSerif-Regular';
+    src: url('/Recipe/YoungSerif-Regular.ttf')
+    format('truetype');
+    font-display: swap;
+}
+
+/*defaults*/
+h2{
+    color:hsl(14, 45%, 36%);
+    font-family: 'YoungSerif-Regular';
+}
+
+h1{
+    color:hsl(24, 5%, 18%);
+    font-family: 'YoungSerif-Regular';
+}
+
+p{
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+    font-family: 'Outfit-VariableFont';
+}
+
+#prepTextColor{
+    color: hsl(332, 51%, 32%);
+ }
+ #desPrepTextColor{
+     color: hsl(30, 10%, 34%);
+ }
+
+#IngredientsBulletColor li::marker{
+    color: hsl(14, 45%, 36%);
+}
+#IngredientsBulletColor{
+    color: hsl(30, 10%, 34%);
+    font-family: 'Outfit-VariableFont';
+}
+
+#InstructionsBorder{
+    border: 1px,solid,rgb(221, 221, 221);
+    border-left: 0; border-right: 0;
+    color: hsl(30, 10%, 34%);
+    font-family: 'Outfit-VariableFont';
+    font-size: 16px;
+}
+#InstructionsBorder ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-family: 'Outfit-VariableFont';
+    font-weight: bold
+  }
+
+#NutritionTable{
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Outfit-VariableFont';
+    font-size: 16px;
+}
+td{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+tr:last-child td{
+    border-bottom: none;
+}
+
+#NutritionTable td:nth-child(1) {
+    color: hsl(30, 10%, 34%);
+}
+
+#NutritionTable td:nth-child(2) {
+    color: hsl(14, 45%, 36%);
+}
+
+
+@media (min-width: 768px){/*desktop version*/
+    body{
+        background-color:hsl(30, 54%, 90%);
+    }
+    
+    #outerborder{
+        border: 2px, solid, white;
+        background-color: white;
+        padding: 30px;
+        margin: 100px auto;
+        width: 650px;
+        border-radius: 20px;
+    }
+    
+    #omelettePicture{
+        display: block;
+        border-radius: 20px;
+        height: 300px;
+        margin: auto;
+        display: block;
+    } 
+    
+    #PrepTime{
+        border: 2px,solid,hsl(330, 100%, 98%);
+        background-color:hsl(330, 100%, 98%);
+        padding: 15px;
+        border-radius: 10px;
+        margin: auto;
+        display: block;
+        font-family: 'Outfit-VariableFont';
+    }
+    
+}
+
+@media (max-width: 767px){/*mobile version (200 plus zoom in website)(minimum size of the window))*/
+    
+    body{
+        margin: 18px;
+    }
+    
+    #omelettePicture {
+        max-width: 119%;
+        height: auto;
+        display: block;
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+
+      #PrepTime{
+        border: 2px,solid,hsl(330, 100%, 98%);
+        background-color:hsl(330, 100%, 98%);
+        padding: 15px;
+        border-radius: 10px;
+        margin: 2px auto;
+        display: block;
+        width: fit-content;
+        font-family: 'Outfit-VariableFont';
+    }
+
+}
