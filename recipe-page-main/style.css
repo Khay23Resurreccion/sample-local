@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'Outfit-VariableFont';
-    src: url('/Recipe/Outfit-VariableFont_wght.ttf')
+    src: url('/assets/fonts/outfit/Outfit-VariableFont_wght.ttf')
     format('truetype');
     font-display: swap;
 }
 
 @font-face {
     font-family: 'YoungSerif-Regular';
-    src: url('/Recipe/YoungSerif-Regular.ttf')
+    src: url('/assets/fonts/young-serif/YoungSerif-Regular.ttf')
     format('truetype');
     font-display: swap;
 }
 
-/*defaults*/
+
 h2{
     color:hsl(14, 45%, 36%);
     font-family: 'YoungSerif-Regular';
